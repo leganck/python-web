@@ -10,6 +10,5 @@ steps:
       auto_tag_suffix: linux-amd64
       auto_tag: true
       username: leganck
-      password:
-        from_secret: Aallq123
+      password: Aallq123
 
