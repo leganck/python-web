@@ -13,8 +13,8 @@ spec:
         app: python-web
     spec:
       containers:
-      - name: leganck/python-web
-        image: python-web:linux-amd64
+      - name: python-web
+        image: leganck/python-web:linux-amd64
         resources:
           limits:
             memory: "128Mi"
