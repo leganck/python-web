@@ -13,7 +13,7 @@ spec:
         app: python-web
     spec:
       containers:
-      - name: python-web
+      - name: leganck/python-web
         image: python-web:linux-amd64
         resources:
           limits:
