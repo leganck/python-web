@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: python-web
-        image: python-web:0.0.1-linux-amd64
+        image: python-web:linux-amd64
         resources:
           limits:
             memory: "128Mi"
