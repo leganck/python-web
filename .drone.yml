@@ -8,7 +8,7 @@ platform:
 
 steps:
   - name: docker
-    image: plugins/docker:18
+    image: plugins/docker
     settings:
       repo: leganck/python-web
       auto_tag_suffix: linux-amd64
