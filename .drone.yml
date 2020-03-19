@@ -9,6 +9,8 @@ steps:
       repo: leganck/python-web
       auto_tag_suffix: linux-amd64
       auto_tag: true
-      username: leganck
-      password: Aallq123
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
 
