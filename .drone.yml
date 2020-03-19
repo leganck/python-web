@@ -8,7 +8,7 @@ platform:
 
 steps:
   - name: docker
-    image: plugins/docker:18
+    image: plugins/docker
     settings:
       repo: leganck/python-web
       auto_tag_suffix: linux-amd64
@@ -18,7 +18,7 @@ steps:
       password:
         from_secret: docker_password
   - name: deploy
-    images: danielgormly/drone-plugin-kube:0.0.1
+    image: danielgormly/drone-plugin-kube
     settings:
       template: deployment.yml
       ca: 
