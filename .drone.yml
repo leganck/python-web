@@ -17,7 +17,6 @@ steps:
         from_secret: docker_username
       password:
         from_secret: docker_password
-
   - name: deploy
     images: danielgormly/drone-plugin-kube:0.0.1
     settings:
