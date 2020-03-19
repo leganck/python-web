@@ -20,6 +20,7 @@ steps:
   - name: deploy
     image: danielgormly/drone-plugin-kube
     settings:
+      namespace: drone
       template: deployment.yml
       ca: 
         from_secret: k8s_cert
