@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: python-web
+spec:
+  selector:
+    matchLabels:
+      app: python-web
+  template:
+    metadata:
+      labels:
+        app: python-web
+    spec:
+      containers:
+      - name: python-web
+        image: python-web:0.0.1-linux-amd64
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 5000
+
