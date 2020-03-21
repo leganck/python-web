@@ -21,4 +21,4 @@ spec:
             cpu: "10m"
         ports:
         - containerPort: 5000
-
+      restartPolicy: Always
