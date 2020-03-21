@@ -1,7 +1,7 @@
 FROM python:3.7-alpine
 RUN mkdir /app
-ADD * /app/
+ADD app.py Pipfile /app/
 WORKDIR /app
-RUN  pip install pipenv && pipenv install  --deploy --ignore-pipfile
+RUN  pip install pipenv && pipenv install  --deploy --ignore-pipfile --system
 EXPOSE 5000
-ENTRYPOINT [ "pipenv" ,"run" ,"python" , "app.py"]
+ENTRYPOINT ["python" , "app.py"]
